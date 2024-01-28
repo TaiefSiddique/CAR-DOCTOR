@@ -21,12 +21,9 @@ const Login = () => {
                 const loggedInUserEmail = user.email;
                 //get jwt token
                 axios.post('http://localhost:5000/jwt', loggedInUserEmail)
-                    .then(function (response) {
-                        console.log(response);
+                    .then(res => {
+                        console.log(res.data);
                     })
-                    .catch(function (error) {
-                        console.log(error);
-                    });
             })
             .catch(error => console.log(error));
     }
