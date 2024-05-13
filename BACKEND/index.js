@@ -55,7 +55,7 @@ async function run() {
             const query = { _id: new ObjectId(id) }
 
             const options = {
-                // Include only the `title` and `imdb` fields in the returned document
+                // Include only the `title` and `imdb` fields in the returned documentt
                 projection: { title: 1, price: 1, service_id: 1, img: 1 },
             };
 
